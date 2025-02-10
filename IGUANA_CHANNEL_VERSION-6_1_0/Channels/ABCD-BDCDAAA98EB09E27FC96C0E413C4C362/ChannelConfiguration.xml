@@ -1,0 +1,30 @@
+<channel
+   name="ABCD"
+   guid="BDCDAAA98EB09E27FC96C0E413C4C362"
+   description=""
+   start_automatically="false"
+   logging_level="1"
+   use_message_filter="false">
+   <to_file
+      output_dir="/Users/hazemsabsabi/Desktop/"
+      write_to_separate_file="true"
+      output_single_filename="%i.txt"
+      use_prepended_info_as_filename="false"
+      output_file_id_type="0"
+      output_filename_mask="%i.txt"
+      temp_file_extension="tmp"
+      count_of_padding_digit="5"
+      sftp_authentication_method="user_password">
+      <dequeue_list>
+         <dequeue
+            source_name="self"
+            dequeue_guid="01DB8AAD72628D9531B6CA8742C67B75"/>
+      </dequeue_list>
+   </to_file>
+   <from_mapper
+      guid="ABCD-From-2owzbn5xoK0D2D"
+      commit_id="7b35a2a56dc763195bb020b972cca6eb1bf21543"
+      commit_comment="fdsfds"
+      poll_time="10000">
+   </from_mapper>
+</channel>
